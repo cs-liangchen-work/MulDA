@@ -6,7 +6,7 @@ MulDA: A Multilingual Data Augmentation Framework for Low-Resource Cross-Lingual
 conll2002+conll2003
 包含：英语，德语，西班牙语，荷兰语。
 
-### 实验1：
+### 实验1：XLM-R的baseline
 使用conll2002+conll2003所有的语料训练xlm-r模型
 测试集语言 | F1   
 -|-
