@@ -88,3 +88,11 @@ de |  |
 esp |  |
 ned |  |
 
+
+mbart遇到的问题：
+我的实现：
+model = MBartForCausalLM.from_pretrained('/home/XXX/facebook/mbart-large-50')
+model = torch.nn.DataParallel(model, device_ids=[0, 1,])
+
+outputs = model(seq_in, labels=label) 这里要求输入输出维度
+
