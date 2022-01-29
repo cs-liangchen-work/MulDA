@@ -92,6 +92,7 @@ ned |  |
 mbart遇到的问题：
 
 我的实现：
+![](https://github.com/cs-liangchen-work/MulDA/blob/main/pic/pic/image-20220128163145853.png)
 
 model = MBartForCausalLM.from_pretrained('/home/XXX/facebook/mbart-large-50')
 
