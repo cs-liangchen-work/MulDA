@@ -1,6 +1,9 @@
 # MulDA
 复现MulDA论文中自己感兴趣的点。
+
 MulDA: A Multilingual Data Augmentation Framework for Low-Resource Cross-Lingual NER
+
+论文给出的原链接：https://github.com/ntunlp/mulda
 
 ### 实验数据：
 conll2002+conll2003
