@@ -90,9 +90,17 @@ ned |  |
 
 
 mbart遇到的问题：
+
 我的实现：
+
 model = MBartForCausalLM.from_pretrained('/home/XXX/facebook/mbart-large-50')
+
 model = torch.nn.DataParallel(model, device_ids=[0, 1,])
 
-outputs = model(seq_in, labels=label) 这里要求输入输出维度
+outputs = model(seq_in, labels=label) 
 
+论文中的是要这样的，但是这里要求输入输出维度相同，然后我就填充至相同维度。
+
+而且测试<mask> 不会自动生成<mask>中的内容，而是直接在最后面生成内容。
+
+看原论文，要改fairseq，就先放下吧。
